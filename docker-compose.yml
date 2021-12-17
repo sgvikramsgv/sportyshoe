@@ -62,12 +62,12 @@ services:
     ports:
       - "3306:3306"
     volumes:
-      - "./mysqldb/ssdb_roles.sql:/docker-entrypoint-initdb.d/1.sql"
-      - "./mysqldb/ssdb_user_role.sql:/docker-entrypoint-initdb.d/2.sql"
-      - "./mysqldb/ssdb_users.sql:/docker-entrypoint-initdb.d/3.sql"
-      - "./mysqldb/ssdb_category.sql:/docker-entrypoint-initdb.d/4.sql"
-      - "./mysqldb/ssdb_product.sql:/docker-entrypoint-initdb.d/5.sql"
-      - "./mysqldb/ssdb_orders.sql:/docker-entrypoint-initdb.d/6.sql"
+      - "./mysql/ssdb_roles.sql:/docker-entrypoint-initdb.d/1.sql"
+      - "./mysql/ssdb_user_role.sql:/docker-entrypoint-initdb.d/2.sql"
+      - "./mysql/ssdb_users.sql:/docker-entrypoint-initdb.d/3.sql"
+      - "./mysql/ssdb_category.sql:/docker-entrypoint-initdb.d/4.sql"
+      - "./mysql/ssdb_product.sql:/docker-entrypoint-initdb.d/5.sql"
+      - "./mysql/ssdb_orders.sql:/docker-entrypoint-initdb.d/6.sql"
     networks:
       - elastic
       
